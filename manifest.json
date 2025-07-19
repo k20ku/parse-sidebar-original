@@ -1,0 +1,15 @@
+{
+
+	"manifest_version": 3,
+	"name": "Parse-Sidebar",
+    "description": "Parse the sidebar from youtube",
+	"version": "1",					
+
+
+	"content_scripts": [
+		{
+			"matches": ["https://www.youtube.com/*"],
+			"js": ["build/ParseSidebar.js"]
+		}
+	]
+}
